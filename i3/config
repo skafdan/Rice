@@ -204,11 +204,11 @@ bar {
 
 #My theme colors
 # class                 border  bground text    indicator child_border
-client.focused          #101B45 #E7E4C3 #101B45 #101B45   #101B45
-client.focused_inactive #E7E4C3 #E7E4C3 #FFFFFF #E7E4C3   #E7E4C3
-client.unfocused        #E7E4C3 #E7E4C3 #888888 #E7E4C3   #E7E4C3
-client.urgent           #E7E4C3 #E7E4C3 #FFFFFF #900000   #900000
-client.placeholder      #000000 #0C0C0C #FFFFFF #000000   #0C0C0C
+client.focused          #13191c #13191c #84a1b0 #101B45   #101B45
+client.focused_inactive #13191c #13191c #84a1b0 #E7E4C3   #E7E4C3
+client.unfocused        #13191c #13191c #a4a5a6 #E7E4C3   #E7E4C3
+client.urgent           #13191c #13191c #a4a5a6 #900000   #900000
+client.placeholder      #13191c #13191c #a4a5a6 #000000   #0C0C0C
 
 client.background       #FFFFFF
 
@@ -257,7 +257,6 @@ bindsym $mod+t exec urxvt -e ranger
     bindsym $mod+Tab workspace back_and_forth
 #Play and pause for spotify using calc button || may cause error on laptop comment this out when using rice_backup folder
 bindsym XF86Calculator exec  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
-
-#volume control
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10
+#Brightness control
+bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
