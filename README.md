@@ -1,23 +1,23 @@
-#Rice 
+# Rice 
 My Personal rice files
 
-##Required packages
+## Required packages
     I3gaps
     Rofi 
     Feh
     Volumeicon
     Network-manager-applet
-##GTK and Fonts 
+## GTK and Fonts 
     Nerd-fonts-inconsolata 
     Arc gtk theme
     papirus icon theme    
-##Optional Extras
+## Optional Extras
     lxapperence
     Pavucontrol 
     spotify-dev 
 
 
-##Known problems 
+## Known problems 
 Urxvrt does not display font awesome incons:
     Termite can be used as intermediary terminal  
     
