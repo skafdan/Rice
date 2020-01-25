@@ -7,6 +7,7 @@ My Personal rice files
     Feh
     Volumeicon
     Network-manager-applet
+    tryone-compton-git(AUR)
 ## GTK and Fonts 
     Nerd-fonts-inconsolata 
     Arc gtk theme
