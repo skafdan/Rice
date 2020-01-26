@@ -8,6 +8,7 @@ My Personal rice files
     Volumeicon
     Network-manager-applet
     tryone-compton-git(AUR)
+    i3lock-fancy-git(AUR)
 ## GTK and Fonts 
     Nerd-fonts-inconsolata 
     Arc gtk theme
