@@ -23,5 +23,3 @@ My Personal rice files
 Urxvrt does not display font awesome incons:
     Termite can be used as intermediary terminal  
 
-# Additional Comments 
-Follow the tutorial at https://lukesmith.xyz/latex.html to install vim plugins like vim-latex-live-preview
