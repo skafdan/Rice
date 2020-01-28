@@ -8,3 +8,7 @@ set expandtab
 
 vnoremap <C-c> "+y
 map <C-v> "+p
+
+execute pathogen#infect()
+syntax on
+filetype plugin indent on
