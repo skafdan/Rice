@@ -9,6 +9,7 @@ My Personal rice files
     Network-manager-applet
     tryone-compton-git(AUR)
     i3lock-fancy-git(AUR)
+    URxvt-resize-font-git
 ## GTK and Fonts 
     Nerd-fonts-inconsolata 
     Arc gtk theme
