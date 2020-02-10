@@ -1,4 +1,11 @@
 !URxvt.scrollBar:	false
+!Extensions
+URxvt.perl-ext-common:resize-font
+
+URxvt.iso14755: false
+URxvt.iso14755_52: false
+
+
 
 Xft.dpi: 102
 !Xft.dpi: 96
