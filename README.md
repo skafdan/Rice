@@ -18,6 +18,7 @@ My Personal rice files
     lxapperence
     Pavucontrol 
     spotify-dev 
+    redshift
 
 
 ## Known problems 
