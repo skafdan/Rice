@@ -163,8 +163,8 @@ mode "resize" {
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
         bindsym h resize shrink width 10 px or 10 ppt
-        bindsym j resize shrink height 10 px or 10 ppt
-        bindsym k resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
         bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
@@ -204,13 +204,15 @@ bar {
 
 #My theme colors
 # class                 border  bground text    indicator child_border
-client.focused          #13191c #13191c #84a1b0 #101B45   #101B45
-client.focused_inactive #13191c #13191c #84a1b0 #E7E4C3   #E7E4C3
-client.unfocused        #13191c #13191c #a4a5a6 #E7E4C3   #E7E4C3
+client.focused          #E7E4C3 #13191c #84a1b0 #E7E4C3   #E7E4C3
+client.focused_inactive #13191c #13191c #84a1b0 #1d1f21   #1d1f21
+client.unfocused        #13191c #13191c #a4a5a6 #1d1f21   #1d1f21
 client.urgent           #13191c #13191c #a4a5a6 #900000   #900000
 client.placeholder      #13191c #13191c #a4a5a6 #000000   #0C0C0C
 
 client.background       #FFFFFF
+
+hide_edge_borders both #dont show edge borders when only application open
 
 #pavu 
 bindsym $mod+Shift+m exec pavucontrol
@@ -225,7 +227,7 @@ bindsym $mod+t exec urxvt -e ranger
 	#screenshot 
 	bindsym $mod+Shift+s exec screengrab -r	
 	#Wallpaper
-	exec_always feh --bg-scale ~/wallpaper.jpg
+	exec_always feh --bg-center ~/wallpaper_1.png
 	#wal 
 	#exec_always wal -i ~/wallpaper.jpg
 	#exec --no-startup-id i3-msg 'workspace 1;  ' #This is to make sure workspace one is first to open
@@ -235,6 +237,8 @@ bindsym $mod+t exec urxvt -e ranger
 	exec --no-startup-id compton -b --respect-prop-shadow
     #Volume icon    
     exec --no-startup-id volumeicon
+    #Redshift 
+    exec_always --no-startup-id redshift
 #Window control 
 	#no borders
 	for_window [class="^.*"] border pixel 2
@@ -260,3 +264,5 @@ bindsym XF86Calculator exec  dbus-send --print-reply --dest=org.mpris.MediaPlaye
 #Brightness control
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+#Lock 
+bindsym $mod+Shift+Reutrn exec urxvt -e lock
