@@ -30,4 +30,4 @@ Urxvrt does not display font awesome incons:
 
 ![second screenshot](screen02.png)
 
-![third screenshot](screeno3.png)
+![third screenshot](screen03.png)
