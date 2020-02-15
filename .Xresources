@@ -28,40 +28,40 @@ URxvt.allow_bold: ture
 URxvt.insecure: false
 
 
+
 ! special
-*.foreground:   #101b45
-!*.background:   #002b36
-*.background:   #E7E4C3
-*.cursorColor:  #DDC8A7
+*.foreground:   #c5c8c6
+*.background:   #1d1f21
+*.cursorColor:  #c5c8c6
 
 ! black
-*.color0:       #002b36
-*.color8:       #657b83
+*.color0:       #282a2e
+*.color8:       #373b41
 
 ! red
-*.color1:       #dc322f
-*.color9:       #dc322f
+*.color1:       #a54242
+*.color9:       #cc6666
 
 ! green
-*.color2:       #859900
-*.color10:      #859900
+*.color2:       #8c9440
+*.color10:      #b5bd68
 
 ! yellow
-*.color3:       #dcb45d
-*.color11:      #dcb45d
+*.color3:       #de935f
+*.color11:      #f0c674
+
 ! blue
-*.color4:       #101B45
-*.color12:      #101B45
+*.color4:       #5f819d
+*.color12:      #81a2be
 
 ! magenta
-*.color5:       #6c71c4
-*.color13:      #6c71c4
+*.color5:       #85678f
+*.color13:      #b294bb
 
 ! cyan
-*.color6:       #89A9B2
-*.color14:      #89A9B2
+*.color6:       #5e8d87
+*.color14:      #8abeb7
 
 ! white
-*.color7:       #181B3C 
-*.color15:      #181B3C
-
+*.color7:       #707880
+*.color15:      #c5c8c6
