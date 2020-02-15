@@ -204,7 +204,7 @@ bar {
 
 #My theme colors
 # class                 border  bground text    indicator child_border
-client.focused          #E7E4C3 #13191c #84a1b0 #E7E4C3   #E7E4C3
+client.focused          #C1BAB7 #13191c #84a1b0 #C1BAB7   #C1BAB7
 client.focused_inactive #13191c #13191c #84a1b0 #1d1f21   #1d1f21
 client.unfocused        #13191c #13191c #a4a5a6 #1d1f21   #1d1f21
 client.urgent           #13191c #13191c #a4a5a6 #900000   #900000
@@ -226,6 +226,7 @@ bindsym $mod+t exec urxvt -e ranger
 	#exec_always  --no-startup-id nm-applet
 	#screenshot 
 	bindsym $mod+Shift+s exec screengrab -r	
+    bindsym $mod+Print   exec screengrab -f
 	#Wallpaper
 	exec_always feh --bg-center ~/wallpaper_1.png
 	#wal 
