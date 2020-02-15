@@ -24,7 +24,7 @@ My Personal rice files
 ## Known problems 
 Urxvrt does not display font awesome incons:
     Termite can be used as intermediary terminal  
-#Screenshots
+# Screenshots
 
 ![first screenshot] (screen01.png)
 
