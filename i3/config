@@ -228,7 +228,7 @@ bindsym $mod+t exec urxvt -e ranger
 	bindsym $mod+Shift+s exec screengrab -r	
     bindsym $mod+Print   exec screengrab -f
 	#Wallpaper
-	exec_always feh --bg-center ~/wallpaper_1.png
+	exec_always feh --bg-center ~/Pictures/wallpaper_1.png
 	#wal 
 	#exec_always wal -i ~/wallpaper.jpg
 	#exec --no-startup-id i3-msg 'workspace 1;  ' #This is to make sure workspace one is first to open
