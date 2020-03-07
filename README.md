@@ -21,6 +21,9 @@ My Personal rice files
     redshift
 
 
+## Grub Config
+Used matter grub theme from 
+https://github.com/mateosss/matter
 ## Known problems 
 Urxvrt does not display font awesome incons:
     Termite can be used as intermediary terminal  
