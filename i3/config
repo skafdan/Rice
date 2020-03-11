@@ -266,4 +266,4 @@ bindsym XF86Calculator exec  dbus-send --print-reply --dest=org.mpris.MediaPlaye
 bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
 bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
 #Lock 
-bindsym $mod+Shift+Reutrn exec urxvt -e lock
+bindsym Control+$mod+l exec i3lock-fancy -p 
