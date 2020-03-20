@@ -27,6 +27,9 @@ https://github.com/mateosss/matter
 ## Known problems 
 Urxvrt does not display font awesome incons:
     Termite can be used as intermediary terminal  
+
+xbaclight does not work on amd
+    Installed blight and updated i3cfg for amd systems
 # Screenshots
 
 ![first screenshot](screen01.png)

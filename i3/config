@@ -263,7 +263,10 @@ bindsym $mod+t exec urxvt -e ranger
 #Play and pause for spotify using calc button || may cause error on laptop comment this out when using rice_backup folder
 bindsym XF86Calculator exec  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
 #Brightness control
-bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
-bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+#bindsym XF86MonBrightnessUp exec xbacklight -inc 10 # increase screen brightness
+#bindsym XF86MonBrightnessDown exec xbacklight -dec 10 # decrease screen brightness
+#Brightness control Laptop 
+bindsym XF86MonBrightnessUp exec blight -d amdgpu_bl0 set +10%
+bindsym XF86MonBrightnessDown exec blight -d amdgpu_bl0 set -10%
 #Lock 
 bindsym Control+$mod+l exec i3lock-fancy -p 
