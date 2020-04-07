@@ -204,7 +204,7 @@ bar {
 
 #My theme colors
 # class                 border  bground text    indicator child_border
-client.focused          #C1BAB7 #13191c #84a1b0 #C1BAB7   #C1BAB7
+client.focused          #13191c #1319c  #84a1b0 #C1BAB7   #C1BAB7
 client.focused_inactive #13191c #13191c #84a1b0 #1d1f21   #1d1f21
 client.unfocused        #13191c #13191c #a4a5a6 #1d1f21   #1d1f21
 client.urgent           #13191c #13191c #a4a5a6 #900000   #900000
@@ -222,17 +222,15 @@ bindsym $mod+t exec urxvt -e ranger
 #Auto run apps
     #Discord 
     exec --no-startup-id discord 
-	#network manager applet
-	#exec_always  --no-startup-id nm-applet
 	#screenshot 
 	bindsym $mod+Shift+s exec screengrab -r	
     bindsym $mod+Print   exec screengrab -f
 	#Wallpaper
-	exec_always feh --bg-center ~/Pictures/wallpaper_1.png
-	#wal 
-	#exec_always wal -i ~/wallpaper.jpg
-	#exec --no-startup-id i3-msg 'workspace 1;  ' #This is to make sure workspace one is first to open
+	#exec_always feh --bg-center ~/Pictures/wallpaper_1.png
+	exec_always feh --bg-scale ~/Pictures/wallpaper/*
+    #pavucontrol
 	exec --no-startup-id pavucontrol
+    #spotify
 	exec --no-startup-id spotify
 	#compton
 	exec --no-startup-id compton -b --respect-prop-shadow
@@ -258,7 +256,7 @@ bindsym $mod+t exec urxvt -e ranger
     #Discord_
     assign [class="discord"] $ws3
 
-#ALT tab
+#Alt Tab
     bindsym $mod+Tab workspace back_and_forth
 #Play and pause for spotify using calc button || may cause error on laptop comment this out when using rice_backup folder
 bindsym XF86Calculator exec  dbus-send --print-reply --dest=org.mpris.MediaPlayer2.spotify /org/mpris/MediaPlayer2 org.mpris.MediaPlayer2.Player.PlayPause
