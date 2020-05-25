@@ -21,47 +21,54 @@ xscreensaver.fade:   false
 xscreensaver.unfade: false
 ! ===== urxvt =====
 URxvt.scrollBar: off
-URxvt.font: xft:monospace:size=11,xft:InconsolataGo\ Nerd\ Font:size=11,xft:symbola:size=12
-URxvt.letterSpace: -1
+!URxvt*font: xft:monospace:size=12,xft:InconsolataGo\ Nerd\ Font:pixelSize=27:minspace=False,xft:symbola:size=12, xft:DejaVu Sans:pixelsize=18
+URxvt*font:xft:Inconsolata Nerd Font Mono:pixelsize=20:minspace=False, xft:DejaVu Sans:pixelsize=18
+URxvt.letterSpace: 0
 URxvt.allow_bold: ture
 
 URxvt.insecure: false
 
 
 
-! special
-*.foreground:   #c5c8c6
-*.background:   #1d1f21
-*.cursorColor:  #c5c8c6
+#define base00 #fbf1c7
+#define base01 #ebdbb2
+#define base02 #d5c4a1
+#define base03 #bdae93
+#define base04 #665c54
+#define base05 #504945
+#define base06 #3c3836
+#define base07 #282828
+#define base08 #9d0006
+#define base09 #af3a03
+#define base0A #b57614
+#define base0B #79740e
+#define base0C #427b58
+#define base0D #076678
+#define base0E #8f3f71
+#define base0F #d65d0e
 
-! black
-*.color0:       #282a2e
-*.color8:       #373b41
+*.foreground:   base05
+#ifdef background_opacity
+*.background:   [background_opacity]base00
+#else
+*.background:   base00
+#endif
+*.cursorColor:  base05
 
-! red
-*.color1:       #a54242
-*.color9:       #cc6666
+*.color0:       base00
+*.color1:       base08
+*.color2:       base0B
+*.color3:       base0A
+*.color4:       base0D
+*.color5:       base0E
+*.color6:       base0C
+*.color7:       base05
 
-! green
-*.color2:       #8c9440
-*.color10:      #b5bd68
-
-! yellow
-*.color3:       #de935f
-*.color11:      #f0c674
-
-! blue
-*.color4:       #5f819d
-*.color12:      #81a2be
-
-! magenta
-*.color5:       #85678f
-*.color13:      #b294bb
-
-! cyan
-*.color6:       #5e8d87
-*.color14:      #8abeb7
-
-! white
-*.color7:       #707880
-*.color15:      #c5c8c6
+*.color8:       base03
+*.color9:       base09
+*.color10:      base01
+*.color11:      base02
+*.color12:      base04
+*.color13:      base06
+*.color14:      base0F
+*.color15:      base07

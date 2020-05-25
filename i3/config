@@ -189,14 +189,14 @@ bar {
     position top
     font pango:monospace 11,InconsolataNerdFontCompleteMono 13 
 	colors{	
-		    background #13191c
-        	statusline #e4e8eb
-        	separator  #172247
+		    background #fbf1c7
+        	statusline #928374
+        	separator  #a89984
            
-        	focused_workspace  #13191c #13191c #84a1b0
-        	active_workspace   #13191c #13191c #84a1b0
-        	inactive_workspace #13191c #13191c #a4a5a6
-        	urgent_workspace   #13191c #13191c #edebce
+        	focused_workspace  #fbf1c7 #fbf1c7 #84a1b0
+        	active_workspace   #fbf1c7 #fbf1c7 #84a1b0
+        	inactive_workspace #fbf1c7 #fbf1c7 #bdae93
+        	urgent_workspace   #fbf1c7 #fbf1c7 #bdae93
         	binding_mode       #DDC8A7 #DDC8A7 #ffffff
 	}
 }
@@ -204,11 +204,11 @@ bar {
 
 #My theme colors
 # class                 border  bground text    indicator child_border
-client.focused          #13191c #1319c  #84a1b0 #C1BAB7   #C1BAB7
-client.focused_inactive #13191c #13191c #84a1b0 #1d1f21   #1d1f21
-client.unfocused        #13191c #13191c #a4a5a6 #1d1f21   #1d1f21
-client.urgent           #13191c #13191c #a4a5a6 #900000   #900000
-client.placeholder      #13191c #13191c #a4a5a6 #000000   #0C0C0C
+client.focused          #ebdbb2 #ebdbb2 #504945 #C1BAB7   #C1BAB7
+client.focused_inactive #ebdbb2 #ebdbb2 #504945 #504945   #1d1f21
+client.unfocused        #a4a5a6 #d5c4a1 #877a73 #504945   #1d1f21
+client.urgent           #a4a5a6 #d5c4a1 #877a73 #504945   #900000
+client.placeholder      #a4a5a6 #d5c4a1 #877a73 #504945   #0C0C0C
 
 client.background       #FFFFFF
 
@@ -233,11 +233,11 @@ bindsym $mod+t exec urxvt -e ranger
     #spotify
 	exec --no-startup-id spotify
 	#compton
-	exec --no-startup-id compton -b --respect-prop-shadow
+	exec --no-startup-id compton -bC 
     #Volume icon    
     exec --no-startup-id volumeicon
     #Redshift 
-    exec_always --no-startup-id redshift
+    exec --no-startup-id redshift
 #Window control 
 	#no borders
 	for_window [class="^.*"] border pixel 2
