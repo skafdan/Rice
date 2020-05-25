@@ -7,12 +7,12 @@ My Personal rice files
     Feh
     Volumeicon
     Network-manager-applet
-    tryone-compton-git(AUR)
+    picom
     i3lock-fancy-git(AUR)
     URxvt-resize-font-git
 ## GTK and Fonts 
     Nerd-fonts-inconsolata 
-    Arc gtk theme
+    NumixSolarizedLightCyan
     papirus icon theme    
 ## Optional Extras
     lxapperence
@@ -24,9 +24,6 @@ My Personal rice files
 ## Grub Config
 Used matter grub theme from 
 https://github.com/mateosss/matter
-## Known problems 
-Urxvrt does not display font awesome incons:
-    Termite can be used as intermediary terminal  
 
 xbaclight does not work on amd
     Installed blight and updated i3cfg for amd systems
